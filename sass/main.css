@@ -44,6 +44,7 @@ header {
   background: linear-gradient(#f0a7b1, #aaa1c8);
   margin-top: 1rem;
   border-top: 2px solid black;
+  width: 100vw;
 }
 
 .footer__logo {
@@ -58,7 +59,6 @@ header {
 }
 
 body {
-  background-image: url(../images/404-not-found-error-icon-in-center-around-the-vector-11848372.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -90,6 +90,8 @@ body {
 
 body {
   background-color: #E9ECF5;
+  width: 100vw;
+  height: auto;
 }
 
 .carrusel__img {
