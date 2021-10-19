@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+@import "menu";
+@import "footer";
+@import "404";
+
+@mixin producto {
+    background-color: #CCD6EB;
+    border: 2px solid black;
+    padding: 0px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10%;
+    box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.83);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+$fondo-primario: #f0a7b1;
+$fondo-color-menu: #aaa1c8;
+
+$men-color-text-prim: #967aa1;
+$menu-color-text-sec: #785d83;
+
+$color-text-prim: #a73962;
+
+
+
+
+* {
+    margin: 0px;
+    padding: auto;
+}
+
+body {
+    background-color: #E9ECF5;
+}
+
+.carrusel {
+    &__img {
+        width: 340px * 4 / 2;
+        height: 180px + 180;
+
+    }
+}
+
+.main {
+    &__titulo {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 2rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 900;
+        color: rgb(9, 8, 8);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+    }
+}
+
+
+.producto {
+
+    @include producto;
+
+    &__titulo {
+        text-decoration: none;
+        font-family: "Lato", sans-serif;
+        font-weight: 1000 - 300;
+        color: $color-text-prim;
+        font-size: 1.60rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-align: right;
+        margin-bottom: 0.50rem;
+    }
+
+    &__img {
+
+        width: 3rem * 5;
+        height: 3rem * 5;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    &__btn {
+        margin-bottom: 0.30rem;
+        border-radius: 13%;
+        background-color: #CCD6EB;
+    }
+}
+
+.logo{
+    height: 4.4rem;
+    width: 4.4rem;
+    margin-left: 1rem;
+}
+

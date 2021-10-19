@@ -1,0 +1,44 @@
+$men-color-text-prim: #967aa1;
+$menu-color-text-sec: #785d83;
+
+
+header {
+    background-image: url("../images/fondo-menu.jpg");
+    background-position: center center;
+    box-sizing: border-box;
+    border-bottom: 3px solid black;
+    margin-bottom: 0.70rem;
+    padding: 0.50rem;
+
+}
+
+.nav {
+    font-size: 1.30rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    word-spacing: 0.50rem;
+
+    &__logo {
+        width: (63rem / 7);
+        height: (63rem / 7);
+        border-radius: 60%;
+    }
+
+    .lista {
+
+        &__item {
+            color: $menu-color-text-sec;
+            transition: all 1s;
+        }
+
+        &__item:hover {
+
+            transform: scale(1.20);
+        }
+
+        &__item--color {
+            color: #fffeff;
+        }
+    }
+
+}
