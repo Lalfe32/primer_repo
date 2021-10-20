@@ -58,7 +58,6 @@ header {
 }
 
 body {
-  background-image: url(../images/404-not-found-error-icon-in-center-around-the-vector-11848372.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -109,7 +108,18 @@ body {
 }
 
 .producto {
-  background-color: #CCD6EB;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.producto:hover {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+}
+
+.producto {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E08D79), to(#DBD3AD));
+  background: linear-gradient(#E08D79, #DBD3AD);
   border: 2px solid black;
   padding: 0px;
   margin-left: 2rem;
@@ -152,9 +162,41 @@ body {
 }
 
 .producto__btn {
+  font-weight: 700;
   margin-bottom: 0.30rem;
   border-radius: 13%;
-  background-color: #CCD6EB;
+  background-color: #D3FCD5;
+}
+
+.producto__btn:hover {
+  background-color: #A7CECB;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about__list {
+  list-style: none;
+}
+
+.about__list li a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #313131;
+  text-decoration: none;
 }
 
 .logo {

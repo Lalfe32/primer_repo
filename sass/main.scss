@@ -7,7 +7,7 @@
 @import "404";
 
 @mixin producto {
-    background-color: #CCD6EB;
+    background: linear-gradient(#E08D79, #DBD3AD);
     border: 2px solid black;
     padding: 0px;
     margin-left: 2rem;
@@ -62,6 +62,13 @@ body {
     }
 }
 
+.producto{
+    transition: all 1s;
+
+    &:hover{
+        transform: scale(1.35);
+    }
+}
 
 .producto {
 
@@ -90,9 +97,32 @@ body {
     }
 
     &__btn {
+        font-weight: 700;
         margin-bottom: 0.30rem;
         border-radius: 13%;
-        background-color: #CCD6EB;
+        background-color: #D3FCD5;
+
+    }
+
+    &__btn:hover{
+        background-color: #A7CECB;
+    }
+}
+.about{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: flex-end;
+
+    &__list{
+        list-style: none;
+
+        li a{
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: rgb(49, 49, 49);
+            text-decoration: none;
+        }
     }
 }
 
