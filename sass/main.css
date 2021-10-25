@@ -116,8 +116,8 @@ body {
 }
 
 .producto:hover {
-  -webkit-transform: scale(1.10);
-          transform: scale(1.10);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .producto {
