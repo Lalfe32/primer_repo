@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 header {
-  background-image: url("../images/fondo-menu.jpg");
-  background-position: center center;
+  background-color: #B8BAC8;
+  /* background-image: url("../images/fondo-menu.jpg");
+  background-position: center center; */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 3px solid black;
