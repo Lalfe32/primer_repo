@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
-@import "menu";
-@import "footer";
-@import "404";
 
 @mixin producto {
     background: linear-gradient(#E08D79, #DBD3AD);
@@ -14,7 +11,6 @@
     margin-right: 2rem;
     margin-bottom: 2rem;
     border-radius: 10%;
-    box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.83);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -40,6 +36,41 @@ body {
     background-color: #E9ECF5;
     width: 100vw;
     height: auto;
+}
+
+header {
+    background-color: #AA78A6;
+    border-bottom: 3px solid black;
+    margin-bottom: 0.70rem;
+    padding: 0.50rem;
+
+}
+
+.nav {
+    font-size: 1.30rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    word-spacing: 0.50rem;
+
+    &__logo {
+        width: (63rem / 7);
+        height: (63rem / 7);
+        border-radius: 60%;
+    }
+
+    .lista {
+
+        &__item {
+            color: $menu-color-text-sec, !important;
+            transition: all 1s;
+        }
+
+        &__item:hover {
+
+            transform: scale(1.20);
+        }
+    }
+
 }
 
 .carrusel {
@@ -68,6 +99,7 @@ body {
     transition: all 1s;
 
     &:hover{
+        box-shadow: 2px rgba(0, 0, 0, .6);
         transform: scale(1.10);
     }
 }
@@ -110,27 +142,21 @@ body {
         background-color: #A7CECB;
     }
 }
-.about{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: end;
-    align-items: flex-end;
 
-    &__list{
-        list-style: none;
+.footer {
+    background: linear-gradient($fondo-primario, $fondo-color-menu);
+    margin-top: 1rem;
+    border-top: 2px solid black;
+    width: 100vw;
 
-        li a{
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: rgb(49, 49, 49);
-            text-decoration: none;
-        }
+    &__logo {
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 60%;
     }
-}
 
-.logo{
-    height: 4.4rem;
-    width: 4.4rem;
-    margin-left: 1rem;
-}
-
+    &__img {
+        height: 3rem;
+        width: 3rem;
+    }
+} 
