@@ -65,8 +65,8 @@ header {
 }
 
 .producto:hover {
-  -webkit-box-shadow: 2px rgba(0, 0, 0, 0.6);
-          box-shadow: 2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.6);
+          box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.6);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

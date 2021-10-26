@@ -6,6 +6,7 @@
 @mixin producto {
     background: linear-gradient(#E08D79, #DBD3AD);
     border: 2px solid black;
+    // box-shadow:10px 0 10px rgba(0, 0, 0, .10);
     padding: 0px;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -66,7 +67,6 @@ header {
         }
 
         &__item:hover {
-
             transform: scale(1.20);
         }
     }
@@ -99,7 +99,7 @@ header {
     transition: all 1s;
 
     &:hover{
-        box-shadow: 2px rgba(0, 0, 0, .6);
+        box-shadow: 1rem 0 1rem rgba(0, 0, 0, .6);
         transform: scale(1.10);
     }
 }
