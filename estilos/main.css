@@ -124,6 +124,11 @@ header {
   background-color: #A7CECB;
 }
 
+.logo {
+  height: 6rem;
+  width: 6rem;
+}
+
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#f0a7b1), to(#aaa1c8));
   background: linear-gradient(#f0a7b1, #aaa1c8);
