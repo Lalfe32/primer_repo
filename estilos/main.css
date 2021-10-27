@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #AA78A6;
+  background-color: #D5AEBA;
   border-bottom: 3px solid black;
   margin-bottom: 0.70rem;
   padding: 0.50rem;
@@ -33,7 +33,6 @@ header {
 }
 
 .nav .lista__item {
-  color: #785d83, !important;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -41,6 +40,14 @@ header {
 .nav .lista__item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.nav .lista__color {
+  color: #9D588A !important;
+}
+
+.nav .lista__color:hover {
+  color: #E2CBDB !important;
 }
 
 .carrusel__img {
@@ -72,8 +79,8 @@ header {
 }
 
 .producto {
-  background: -webkit-gradient(linear, left top, left bottom, from(#E08D79), to(#DBD3AD));
-  background: linear-gradient(#E08D79, #DBD3AD);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFCAD4), to(#F1E4E8));
+  background: linear-gradient(#FFCAD4, #F1E4E8);
   border: 2px solid black;
   padding: 0px;
   margin-left: 2rem;
@@ -117,11 +124,11 @@ header {
   font-weight: 700;
   margin-bottom: 0.30rem;
   border-radius: 13%;
-  background-color: #D3FCD5;
+  background-color: #FFADBC;
 }
 
 .producto__btn:hover {
-  background-color: #A7CECB;
+  background-color: #FF859B;
 }
 
 .logo {
@@ -130,8 +137,8 @@ header {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f0a7b1), to(#aaa1c8));
-  background: linear-gradient(#f0a7b1, #aaa1c8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#DEBACB), to(#B07C9E));
+  background: linear-gradient(#DEBACB, #B07C9E);
   margin-top: 1rem;
   border-top: 2px solid black;
   width: 100vw;

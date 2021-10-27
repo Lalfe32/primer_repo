@@ -1,12 +1,19 @@
+$fondo-primario: #DEBACB;
+$fondo-color-menu: #B07C9E;
+
+$men-color-text-prim: #967aa1;
+$menu-color-text-sec: #785d83;
+
+$color-text-prim: #a73962;
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
 
 @mixin producto {
-    background: linear-gradient(#E08D79, #DBD3AD);
+    background: linear-gradient(#FFCAD4, #F1E4E8);
     border: 2px solid black;
-    // box-shadow:10px 0 10px rgba(0, 0, 0, .10);
     padding: 0px;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -16,14 +23,6 @@
     flex-flow: column wrap;
     align-items: center;
 }
-
-$fondo-primario: #f0a7b1;
-$fondo-color-menu: #aaa1c8;
-
-$men-color-text-prim: #967aa1;
-$menu-color-text-sec: #785d83;
-
-$color-text-prim: #a73962;
 
 
 
@@ -40,7 +39,7 @@ body {
 }
 
 header {
-    background-color: #AA78A6;
+    background-color: #D5AEBA;
     border-bottom: 3px solid black;
     margin-bottom: 0.70rem;
     padding: 0.50rem;
@@ -62,12 +61,18 @@ header {
     .lista {
 
         &__item {
-            color: $menu-color-text-sec, !important;
             transition: all 1s;
         }
 
         &__item:hover {
             transform: scale(1.20);
+        }
+
+        &__color{
+            color: #9D588A !important;
+        }
+        &__color:hover{
+            color: #E2CBDB !important;
         }
     }
 
@@ -134,12 +139,12 @@ header {
         font-weight: 700;
         margin-bottom: 0.30rem;
         border-radius: 13%;
-        background-color: #D3FCD5;
+        background-color: #FFADBC;
 
     }
 
     &__btn:hover{
-        background-color: #A7CECB;
+        background-color: #FF859B;
     }
 }
 
