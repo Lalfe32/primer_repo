@@ -15,8 +15,8 @@ $color-text-prim: #a73962;
     background: linear-gradient(#FFCAD4, #F1E4E8);
     border: 2px solid black;
     padding: 0px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
     margin-bottom: 2rem;
     border-radius: 10%;
     display: flex;
@@ -34,8 +34,9 @@ $color-text-prim: #a73962;
 
 body {
     background-color: #E9ECF5;
-    width: 100vw;
+    width: 100vw !important;
     height: auto;
+    overflow-x: hidden !important;
 }
 
 header {
